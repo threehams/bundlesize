@@ -32,6 +32,12 @@ Add it to your scripts in `package.json`
 
 &nbsp;
 
+Or you can use `npx` with [NPM 5.2+](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
+
+```bash
+npx bundlesize
+```
+
 #### configuration
 
 &nbsp;
@@ -46,7 +52,7 @@ Add it to your scripts in `package.json`
   "bundlesize": [
     {
       "path": "./dist.js",
-      "maxSize": "3 Kb"
+      "maxSize": "3 kB"
     }
   ]
 }
@@ -60,11 +66,11 @@ Example:
 "bundlesize": [
   {
     "path": "./dist/vendor-*.js",
-    "maxSize": "3 Kb"
+    "maxSize": "3 kB"
   },
   {
     "path": "./dist/chunk-*.js",
-    "maxSize": "3 Kb"
+    "maxSize": "3 kB"
   }
 ]
 
@@ -78,7 +84,7 @@ This makes it great for using with applications that are bundled with another to
 
 ![build status](https://raw.githubusercontent.com/siddharthkp/bundlesize/master/art/status.png)
 
-Currently works for [Travis CI](https://travis-ci.org), [CircleCI](https://circleci.com/), [Wercker](wercker.com), and [Drone](http://readme.drone.io/).
+Currently works for [Travis CI](https://travis-ci.org), [CircleCI](https://circleci.com/), [Wercker](http://www.wercker.com), and [Drone](http://readme.drone.io/).
 
 - [Authorize `bundlesize` for status access](https://github.com/login/oauth/authorize?scope=repo%3Astatus&client_id=6756cb03a8d6528aca5a), copy the token provided.
 - Add this token as `BUNDLESIZE_GITHUB_TOKEN` as environment parameter in your CIs project settings.
@@ -138,3 +144,7 @@ For more granular configuration, we recommend configuring it in the `package.jso
 #### license
 
 MIT © [siddharthkp](https://github.com/siddharthkp)
+
+#### sponsor
+
+[![Sponsor](https://app.codesponsor.io/embed/LhLT2c31ydJzdLUuSR9f8mCA/siddharthkp/bundlesize.svg)](https://app.codesponsor.io/link/LhLT2c31ydJzdLUuSR9f8mCA/siddharthkp/bundlesize)
